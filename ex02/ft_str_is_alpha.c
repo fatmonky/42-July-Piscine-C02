@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_main.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/31 15:37:58 by pteh              #+#    #+#             */
-/*   Updated: 2023/07/31 15:39:36 by pteh             ###   ########.fr       */
+/*   Created: 2023/08/01 14:54:06 by pteh              #+#    #+#             */
+/*   Updated: 2023/08/01 15:14:07 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
 
-
-int	main()
+int	ft_str_is_alpha(char *str)
 {
-	//include function to test here.
-
-
-	//
-	//
+	while (*str != '\0')
+	{
+		//compare pointer deref to each value in string literal 
+		if (((int)*str > 64 && (int)*str < 91)
+			|| ((int)*str > 96 && (int)*str < 123)
+			|| ((int)str == 0))
+		{
+			return('1');
+		} else
+		{
+			return('0');
+		}
+		str++;
+	}
 }

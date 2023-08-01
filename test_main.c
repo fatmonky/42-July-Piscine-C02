@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   test_main.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/31 15:32:31 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/01 14:25:35 by pteh             ###   ########.fr       */
+/*   Created: 2023/07/31 15:37:58 by pteh              #+#    #+#             */
+/*   Updated: 2023/07/31 15:49:04 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 
-char	*ft_strcpy(char *dest, char *src)
+
+int	main()
 {
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	return (dest);
+	//include function to test here.
+
+
+	//
+	//
 }
