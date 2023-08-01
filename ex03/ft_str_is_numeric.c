@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_main.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/31 15:37:58 by pteh              #+#    #+#             */
-/*   Updated: 2023/07/31 15:49:04 by pteh             ###   ########.fr       */
+/*   Created: 2023/08/01 19:45:44 by pteh              #+#    #+#             */
+/*   Updated: 2023/08/01 19:48:54 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-
-
-int	main()
+int	ft_str_is_numeric(char *str)
 {
-	//include function to test here.
+	int	char_counter;
 
-
-	//
-	//
+	char_counter = 0;
+	while (*str != '\0')
+	{
+		if ((int)*str > 47 && (int)*str < 58)
+		{
+			char_counter++;
+		}
+		else
+		{
+			return (0);
+		}
+		str++;
+	}
+	return (1);
 }
