@@ -1,42 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   C0209main.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/31 15:32:31 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/02 17:54:38 by pteh             ###   ########.fr       */
+/*   Created: 2023/07/31 15:37:58 by pteh              #+#    #+#             */
+/*   Updated: 2023/08/02 13:39:54 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*#include <unistd.h>
+#include <unistd.h>
 #include <stdio.h>
-#include <string.h>*/
+#include <string.h>
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcapitalize(char *st);
+
+int	main()
 {
-	char	*original_dest;
-
-	original_dest = dest;
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = *src;
-	return (original_dest);
-}
-
-/*
-int	main(void)
-{
-	char	*source;
-	char	destination[20];
-
-	source = "Hello world";
-	ft_strcpy(destination, source);
+	//include function to test here.
+	char source[] = "salut, comment tu vas? 42mots quarante-deux; cinquante+et+un"; 
 	printf("Source: %s\n", source);
-	printf("Destination: %s\n", destination);
-	return (0);
-}*/
+	ft_strcapitalize(source);
+	printf("trans: %s\n", source);
+
+return 0;
+
+}
