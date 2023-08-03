@@ -6,7 +6,7 @@
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/31 15:37:58 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/02 13:39:54 by pteh             ###   ########.fr       */
+/*   Updated: 2023/08/03 15:15:50 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -18,10 +18,9 @@ char	*ft_strcapitalize(char *st);
 int	main()
 {
 	//include function to test here.
-	char source[] = "salut, comment tu vas? 42mots quarante-deux; cinquante+et+un"; 
+	char source[] = "salut, comMent tu vas? 42mots quarante-deux; cinquante+et+un"; 
 	printf("Source: %s\n", source);
-	ft_strcapitalize(source);
-	printf("trans: %s\n", source);
+	printf("trans: %s\n", ft_strcapitalize(source));
 
 return 0;
 
