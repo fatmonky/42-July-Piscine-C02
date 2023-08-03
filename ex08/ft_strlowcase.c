@@ -6,7 +6,7 @@
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 13:14:33 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/03 14:40:13 by pteh             ###   ########.fr       */
+/*   Updated: 2023/08/03 15:00:08 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*#include <unistd.h>
@@ -55,11 +55,11 @@ int	main(void)
 	ft_strlowcase(wrong_end);
 	ft_strlowcase(empty);
 
-	printf("trans: %s\n", source);
-	printf("transwrong_start: %s\n", wrong_start);
-	printf("transwrong_mid: %s\n", wrong_mid);
-	printf("transwrong_end: %s\n", wrong_end);
-	printf("transempty: %s\n", empty);
+	printf("trans: %s\n", ft_strlowcase(source));
+	printf("transwrong_start: %s\n", ft_strlowcase(wrong_start));
+	printf("transwrong_mid: %s\n", ft_strlowcase(wrong_mid));
+	printf("transwrong_end: %s\n", ft_strlowcase(wrong_end));
+	printf("transempty: %s\n", ft_strlowcase(wrong_end));
 
 return (0);
 }*/

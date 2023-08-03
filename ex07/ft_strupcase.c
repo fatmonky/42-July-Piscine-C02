@@ -6,7 +6,7 @@
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 11:05:38 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/03 14:39:08 by pteh             ###   ########.fr       */
+/*   Updated: 2023/08/03 14:55:36 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*#include <unistd.h>
@@ -24,7 +24,7 @@ int	check_contains(char *str)
 char	*ft_strupcase(char *str)
 {
 	char	*originalstr;
-	
+
 	originalstr = str;
 	while (*str)
 	{
@@ -49,16 +49,10 @@ int	main(void)
 	printf("wrong_end: %s\n", wrong_end);
 	printf("empty: %s\n", empty);
 
-	ft_strupcase(source);
-	ft_strupcase(wrong_start);
-	ft_strupcase(wrong_mid);
-	ft_strupcase(wrong_end);
-	ft_strupcase(empty);
-
-	printf("trans: %s\n", source);
-	printf("transwrong_start: %s\n", wrong_start);
-	printf("transwrong_mid: %s\n", wrong_mid);
-	printf("transwrong_end: %s\n", wrong_end);
+	printf("trans: %s\n", ft_strupcase(source));
+	printf("transwrong_start: %s\n", ft_strupcase(wrong_start));
+	printf("transwrong_mid: %s\n", ft_strupcase(wrong_mid));
+	printf("transwrong_end: %s\n", ft_strupcase(wrong_end));
 	printf("transempty: %s\n", empty);
 
 return (0);
