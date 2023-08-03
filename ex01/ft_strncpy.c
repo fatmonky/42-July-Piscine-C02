@@ -6,7 +6,7 @@
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 14:20:48 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/03 09:48:28 by pteh             ###   ########.fr       */
+/*   Updated: 2023/08/03 14:40:49 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*#include <unistd.h>
@@ -31,6 +31,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	{
 		*dest = '\0';
 		counter++;
+		dest++;
 	}
 	return (original_dest);
 }

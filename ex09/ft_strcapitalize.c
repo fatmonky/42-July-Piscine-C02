@@ -6,7 +6,7 @@
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 13:34:31 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/03 10:55:21 by pteh             ###   ########.fr       */
+/*   Updated: 2023/08/03 14:38:13 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -42,7 +42,9 @@ int	check_contains_letters(char *str)
 char	*ft_strcapitalize(char *str)
 {
 	char	*ticker;
+	char	*original_str;
 
+	original_str = str;
 	while (*str)
 	{
 		ticker = str;
@@ -63,5 +65,5 @@ char	*ft_strcapitalize(char *str)
 			str++;
 		}
 	}
-	return (str);
+	return (original_str);
 }

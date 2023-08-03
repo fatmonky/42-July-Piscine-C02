@@ -6,7 +6,7 @@
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 13:14:33 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/03 10:11:08 by pteh             ###   ########.fr       */
+/*   Updated: 2023/08/03 14:40:13 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*#include <unistd.h>
@@ -23,13 +23,16 @@ int	check_contains(char *str)
 
 char	*ft_strlowcase(char *str)
 {
+	char	*originalstr;
+
+	originalstr = str;
 	while (*str)
 	{
 		if (check_contains(str) == 1)
 			*str = *str + 32;
 		str++;
 	}
-	return (str);
+	return (originalstr);
 }
 /*
 int	main(void)
