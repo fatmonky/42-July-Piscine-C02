@@ -6,10 +6,10 @@
 /*   By: pteh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 13:34:31 by pteh              #+#    #+#             */
-/*   Updated: 2023/08/03 15:15:21 by pteh             ###   ########.fr       */
+/*   Updated: 2023/08/04 16:17:40 by pteh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+// try checking for non-alphanumeric.
 /* #include <unistd.h>
 #include <stdio.h>
 #include <string.h>*/
